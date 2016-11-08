@@ -189,36 +189,6 @@ public class DataModel {
     }
 
 
-
-    /*
-    /**
-     * Used to execute a delegate runnable and track its completion.
-
-    private static class ExecutedRunnable implements Runnable {
-
-        private final Runnable mDelegate;
-        private boolean mExecuted;
-
-        private ExecutedRunnable(Runnable delegate) {
-            this.mDelegate = delegate;
-        }
-
-        @Override
-        public void run() {
-            mDelegate.run();
-
-            synchronized (this) {
-                mExecuted = true;
-                notifyAll();
-            }
-        }
-
-        private boolean isExecuted() {
-            return mExecuted;
-        }
-    }
-     */
-
     /**
      * Used to execute a delegate runnable and track its completion.
      */
@@ -238,6 +208,10 @@ public class DataModel {
                 mExecuted = true;
                 notifyAll();
             }
+        }
+
+        private boolean isExecuted() {
+            return mExecuted;
         }
     }
 }
