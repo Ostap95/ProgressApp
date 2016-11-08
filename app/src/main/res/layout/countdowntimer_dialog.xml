@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="wrap_content">
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hours"
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/hour_textview"
+                />
+
+            <NumberPicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hours_numberPicker"
+                android:layout_below="@id/hour_textview"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Minutes"
+                android:textSize="15sp"
+                android:layout_marginLeft="38dp"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/minute_textview"
+                android:layout_toRightOf="@id/hour_textview"
+                />
+
+            <NumberPicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/minute_numberPicker"
+                android:layout_toRightOf="@+id/hours_numberPicker"
+                android:layout_below="@id/minute_textview"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seconds"
+                android:textSize="15sp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/seconds_textview"
+                android:layout_toRightOf="@id/minute_textview"
+                />
+
+            <NumberPicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/seconds_numberPicker"
+                android:layout_toRightOf="@id/minute_numberPicker"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_below="@id/seconds_textview"
+                android:layout_marginTop="10dp"
+                />
+
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:id="@+id/clearNumberPickerButton"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

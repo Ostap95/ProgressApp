@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/task_cardview"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:clickable="true"
+    android:layout_gravity="center"
+    android:foreground="?android:attr/selectableItemBackground"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_centerHorizontal="true"
+            android:text="Task Name"
+            android:id="@+id/task_name"
+           />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_below="@id/task_name"
+            android:layout_centerHorizontal="true"
+            android:text="Practiced 50 min ago"
+            android:id="@+id/task_last_time"
+            />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
